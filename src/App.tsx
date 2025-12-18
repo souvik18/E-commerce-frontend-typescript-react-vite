@@ -4,7 +4,15 @@ import BannerSlider from './components/BannerSlider';
 import ProductGrid from './components/ProductGrid';
 import EnquiryModal from './components/EnquiryModal';
 import Footer from './components/Footer';
-import type { Product } from './lib/supabase';
+
+/* Local Product type */
+interface Product {
+  id: number;
+  name: string;
+  description: string;
+  price: number;
+  imagePath: string;
+}
 
 function App() {
   const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
@@ -26,11 +34,11 @@ function App() {
       <BannerSlider />
       <ProductGrid onEnquiryClick={handleEnquiryClick} />
       <Footer />
-      <EnquiryModal
+      {/* <EnquiryModal
         product={selectedProduct}
         isOpen={isModalOpen}
         onClose={handleCloseModal}
-      />
+      /> */}
     </div>
   );
 }

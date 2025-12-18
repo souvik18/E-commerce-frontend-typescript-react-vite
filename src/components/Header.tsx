@@ -18,7 +18,7 @@ export default function Header() {
         <div className="flex justify-between items-center py-4">
           <div className="flex items-center space-x-2 cursor-pointer" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
             <Briefcase className="w-8 h-8 text-blue-600" />
-            <span className="text-2xl font-bold text-gray-900">BizPro</span>
+            <span className="text-2xl font-bold text-gray-900">CapMania</span>
           </div>
 
           <nav className="hidden md:flex space-x-8">
@@ -26,10 +26,10 @@ export default function Header() {
               Home
             </button>
             <button onClick={() => scrollToSection('services')} className="text-gray-700 hover:text-blue-600 font-medium transition-colors">
-              Services
+              Sign In
             </button>
             <button onClick={() => scrollToSection('footer')} className="text-gray-700 hover:text-blue-600 font-medium transition-colors">
-              Contact
+              Sign Up
             </button>
           </nav>
 
@@ -47,10 +47,10 @@ export default function Header() {
               Home
             </button>
             <button onClick={() => scrollToSection('services')} className="block w-full text-left px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded transition-colors">
-              Services
+              Sign In
             </button>
             <button onClick={() => scrollToSection('footer')} className="block w-full text-left px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded transition-colors">
-              Contact
+              Sign Up
             </button>
           </nav>
         )}
