@@ -1,21 +1,24 @@
 import { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
+import one from '../assets/banners/one.png';
+import two from '../assets/banners/two.png';
+import three from '../assets/banners/three.png';
 
 const slides = [
   {
-    image: 'https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=1600',
-    title: 'Transform Your Business',
-    subtitle: 'Professional solutions tailored to your needs'
+    image: one,
+    title: 'Premium Caps Collection',
+    subtitle: 'Style that defines you'
   },
   {
-    image: 'https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=1600',
-    title: 'Innovation & Excellence',
-    subtitle: 'Cutting-edge technology for modern businesses'
+    image: two,
+    title: 'Streetwear Essentials',
+    subtitle: 'Designed for everyday wear'
   },
   {
-    image: 'https://images.pexels.com/photos/3184357/pexels-photo-3184357.jpeg?auto=compress&cs=tinysrgb&w=1600',
-    title: 'Your Success is Our Goal',
-    subtitle: 'Partner with us for sustainable growth'
+    image: three,
+    title: 'Sport & Casual Caps',
+    subtitle: 'Comfort meets performance'
   }
 ];
 
@@ -25,7 +28,7 @@ export default function BannerSlider() {
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % slides.length);
-    }, 5000);
+    }, 3000);
 
     return () => clearInterval(timer);
   }, []);

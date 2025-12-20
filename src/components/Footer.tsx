@@ -1,4 +1,4 @@
-import { Briefcase, Mail, Phone, MapPin, Facebook, Twitter, Linkedin, Instagram } from 'lucide-react';
+import { GraduationCap, Mail, Phone, MapPin, Facebook, Twitter, Linkedin, Instagram } from 'lucide-react';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -9,11 +9,11 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           <div>
             <div className="flex items-center space-x-2 mb-4">
-              <Briefcase className="w-8 h-8 text-blue-500" />
-              <span className="text-2xl font-bold text-white">BizPro</span>
+              <GraduationCap className="w-8 h-8 text-blue-500" />
+              <span className="text-2xl font-bold text-white">CapMania</span>
             </div>
             <p className="text-gray-400 mb-4">
-              Professional business solutions to help you achieve your goals and grow your enterprise.
+              Shop Premium Caps Online.
             </p>
             <div className="flex space-x-4">
               <a
@@ -93,7 +93,7 @@ export default function Footer() {
               <li className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-blue-500 flex-shrink-0" />
                 <a href="mailto:info@bizpro.com" className="hover:text-blue-500 transition-colors">
-                  info@bizpro.com
+                  info@capmania.com
                 </a>
               </li>
             </ul>
@@ -102,7 +102,7 @@ export default function Footer() {
 
         <div className="border-t border-gray-800 pt-8 text-center">
           <p className="text-gray-400">
-            {currentYear} BizPro. All rights reserved.
+            {currentYear} CapMania. All rights reserved.
           </p>
         </div>
       </div>

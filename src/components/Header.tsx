@@ -1,4 +1,4 @@
-import { Menu, X, Briefcase } from 'lucide-react';
+import { Menu, X, GraduationCap } from 'lucide-react';
 import { useState } from 'react';
 
 export default function Header() {
@@ -17,7 +17,7 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           <div className="flex items-center space-x-2 cursor-pointer" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
-            <Briefcase className="w-8 h-8 text-blue-600" />
+            <GraduationCap className="w-8 h-8 text-blue-600" />
             <span className="text-2xl font-bold text-gray-900">CapMania</span>
           </div>
 
